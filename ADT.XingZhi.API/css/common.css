@@ -1,0 +1,97 @@
+﻿#alertM, #alertP, #alertBtns {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: arial,sans-serif;
+    text-align: left;
+}
+
+    #alertBtns a {
+        text-decoration: none;
+    }
+
+#hbg {
+    width: 100%;
+    position: absolute;
+    background: #000;
+    z-index: 998; /* 设置层级，主要是为了遮住页面内的其他内容 */
+    top: 0;
+    left: 0;
+    height: 2000px; /* 超过整屏高度 */
+    opacity: 0.6; 
+}
+
+#alertM {
+    position: absolute; /* 绝对定位，为了以后控制方便 */
+    top: 30%;
+    background: #fff;
+    z-index: 999; /* 层级 */
+    width: 40%;
+    height: auto;
+    left: 30%; 
+    border: 1px #ccc solid;
+}
+
+#alertP {
+    padding: 12px;
+    text-align: center;
+}
+
+#alertBtns {
+    text-align: right;
+}
+
+    #alertBtns a {
+        margin: 8px;
+        padding: 0 24px;
+        color: #000;
+        background: #EEE;
+        border: 1px #E6E6E6 solid;
+        display: inline-block;
+        margin-right: 22%;
+        height: 20px;
+        width: 28px;
+        margin-top: -4px;
+    }
+
+        #alertBtns a:hover {
+            background: #ccc;
+            border: 1px #ddd solid;
+        }
+
+        #alertBtns a:active {
+            background: #bbb;
+            border: 1px #aaa solid;
+        }
+
+#alertM {
+    box-shadow: 0px 0px 24px #000; /* 阴影 */
+    border-radius: 12px; /* 圆角 */
+}
+
+
+#alertBtns a {
+    text-shadow: 0px 1px 1px white;
+    background-image: -moz-linear-gradient(top, #fff, #ccc);
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #fff),color-stop(1, #ccc));
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+    #alertBtns a:hover {
+        background: #ccc;
+        background-image: -moz-linear-gradient(top, #f6f6f6,#c6c6c6);
+        background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #f6f6f6),color-stop(1, #c6c6c6));
+        box-shadow: 0px 0px 3px rgba(0,0,0,1);
+        border: 1px #ddd solid;
+    }
+
+    #alertBtns a:active {
+        background: #bbb;
+        background-image: -moz-linear-gradient(top, #f3f3f3,#bbb);
+        background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, #f3f3f3),color-stop(1, #bbb));
+        box-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+        border: 1px #aaa solid;
+    }
